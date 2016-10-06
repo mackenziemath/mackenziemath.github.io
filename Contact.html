@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>W.L. Mackenzie Math Club</title>
+</head>
+<style>
+        .button {
+    		background-color: #6FB98F;
+   		 	border: none;
+    		color: white;
+    		padding: 15px 32px;
+    		text-align: center;
+    		text-decoration: none;
+    		display: inline-block;
+    		font-size: 16px;
+    		margin: 4px 7px;
+    		cursor: pointer;
+		}
+		.head {
+    		color: #FB6542;
+			font-family: Arial, Helvetica, sans-serif;
+			
+		}
+		.head2 {
+    		color: #FFBB00;
+			font-family: Copperplate Gothic Light, sans-serif;
+		}
+		table {
+			border-collapse: separate;
+			background:#fff;
+			@include border-radius(5px);
+			margin:50px auto;
+			@include box-shadow(0px 0px 5px rgba(0,0,0,0.3));
+		  }
+		  
+		  thead {
+			@include border-radius(5px);
+		  }
+		  
+		  thead th {
+			font-family: 'Patua One', cursive;
+			font-size:16px;
+			font-weight:400;
+			color:#;
+			@include text-shadow(1px 1px 0px rgba(0,0,0,0.5));
+			text-align:left;
+			padding:20px;
+			border-top:1px solid #858d99;
+			
+			&:first-child {
+			 @include border-top-left-radius(5px); 
+			}
+		  
+			&:last-child {
+			  @include border-top-right-radius(5px); 
+			}
+		  }
+		  
+		  tbody tr td {
+			font-family: 'Open Sans', sans-serif;
+			font-weight:400;
+			color:#5f6062;
+			font-size:13px;
+			padding:20px 20px 20px 20px;
+			border-bottom:1px solid #e0e0e0;
+			
+		  }
+		  
+		  tbody tr:nth-child(2n) {
+			background:#f0f3f5;
+		  }
+		  
+		  tbody tr:last-child td {
+			border-bottom:none;
+			&:first-child {
+			  @include border-bottom-left-radius(5px);
+			}
+			&:last-child {
+			  @include border-bottom-right-radius(5px);
+			}
+		  }
+		  
+		  tbody:hover > tr td {
+			@include opacity(0.5);
+			
+			 /*uncomment for blur effect*/ 
+			color:transparent;
+			@include text-shadow(0px 0px 2px rgba(0,0,0,0.8));*/
+		  }
+		  
+		  tbody:hover > tr:hover td {
+			@include text-shadow(none);
+			color:#2d2d2d;
+			@include opacity(1.0);
+		  }
+
+	</style>
+	<body bgcolor="#375E97">
+    <div align="center">
+      <h1 class="head">Mackenzie Math Club</h1>
+      <h2 class="head2">Welcome to the 2016/2017 W. L. Mackenzie Math Club Website</h2>
+    </div>
+    <div align="center">
+      <button class="button">Home</button>
+      <button class="button">Leaderboard</button>
+      <button class="button">Contest Registration</button>
+      <button class="button">Contact</button>
+    </div>
+    <table>
+    <thead align="center" bgcolor="#6FB98F" >
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody align="center">
+        <tr>
+            <td>Clark Tang</td>
+            <td>Co-President</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Abdul Arif</td>
+            <td>Co-President</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>John Li</td>
+            <td>VP of Seniors</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Ryan Yu</td>
+            <td>VP of Juniors</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Vedant Purohit</td>
+            <td>Website Developer/Attendance</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Stefan Geleriu</td>
+            <td>Website</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
