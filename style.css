@@ -29,7 +29,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #337CB9;
+    background-color: #4091BA;
     top: 0;
     width: 100%;
 }
@@ -41,7 +41,7 @@ li a {
     text-align: center;
     padding: 40px 60px;
     text-decoration:none;
-    color: #FFBB00;
+    color: #1E516B;
     font-family: Copperplate Gothic Light, sans-serif;
     font-size:20px;
 font-weight:900;
@@ -53,16 +53,16 @@ img {
     text-decoration:none;
 }
 li a:hover{
-    background-color: #FFBB00;
+    background-color: #EDF5F9;
 color:#337CB9;
 text-shadow: 0 0 3px #1F5A8A;
 }
 .head {
-    color: #FFBB00;
+    color: #346F8D;
     font-family: Impact;
 			
 }
 .head2 {
-    color: #FFFFFF;
+    color: #4091BA;
     font-family: Copperplate Gothic Light, sans-serif;
 }
