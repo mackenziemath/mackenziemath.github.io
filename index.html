@@ -1,27 +1,138 @@
 <!doctype html>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 100
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
 <meta charset="utf-8">
+
 <title>W.L. Mackenzie Math Club</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body bgcolor="#FFFFFF">
 <div>
 <ul>
-<li><img src="Lion.png" alt="Mackenzie Math Club" style="width:80px;height:100px;"></li>
-  <li><a class ="ripple" href="index.html">Home</a></li>
-  <li><a class ="ripple" href="#">Leaderboard</a></li>
-  <li><a class ="ripple" href="Register.html">Contest Registration</a></li>
-  <li><a class ="ripple" href="Contact.html">Contact</a></li>
-<li><a class ="ripple" href="Permission.html">Permission Slip</a></li>
+  <li><h1 class="head">Mackenzie Math Club</h1></li>
+  <li><a class ="ripple" href="#Top">Home</a></li>
+  <!-- <li><a class ="ripple" href="Leaderboard.html">Leaderboard</a></li> -->
+  <li><a class ="ripple" href="#Register">Contest Registration</a></li>
+  <li><a class ="ripple" href="#Contact">Contact</a></li>
+<li><a class ="ripple" href="#Permission">Permission Slip</a></li>
 </ul>
 </div>
-    <div align="center">
-      <h1 class="head">Mackenzie Math Club</h1>
+
+<!--HOME-->
+
+<div class="full">
+<div align="left" id="Top">
+<h1 class="head3" >HOME</h1>
+</div>
+<div align="center">
       <h2 class="head2">Welcome to the 2016/2017 W. L. Mackenzie Math Club Website</h2>
     </div>
 <div align="center">
-<iframe src="https://docs.google.com/presentation/d/16XxsDiOLKEzNA5QQPZCsDs4IoQlJ13AjlIEsVeoK-_w/embed?start=true&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" width="100%" height="100%"></iframe>
+<iframe src="https://docs.google.com/presentation/d/16XxsDiOLKEzNA5QQPZCsDs4IoQlJ13AjlIEsVeoK-_w/embed?start=true&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" width="100%" height="100%" vertical-align="100px"></iframe>
 </div>
+</div>
+
+<!--REGISTER-->
+
+<div id="b" class="full">
+<div align="left">
+<h1 class="head4" id="Register">REGISTER</h1>
+</div>
+<div align="center">
+<h2 class="head2">Contest signup open for: </h2>
+<h1 class="head">CIMC/CSMC</h1>
+</div>
+<div align="center">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc0ACg72m2y32n-Pa_NyRx3pXh3EvLfQbUMTSPVN_U5pgswig/viewform?embedded=true" width="760" height="500" frameborder="10" marginheight="0" marginwidth="0">Loading...</iframe>
+</div>
+</div>
+
+<!--CONTACT-->
+
+<div class="full">
+<div align="left">
+<h1 class="head4" id="Contact">CONTACT</h1>
+</div>
+<div align="center">
+<h2 class="head2">The 2016/2017 Math Club Executive Team</h2>
+</div>
+<table>
+    <thead align="center" bgcolor="#4091BA" >
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+        </tr>
+    </thead>
+    <tbody align="center">
+        <tr>
+            <td>Clark Tang</td>
+            <td>Co-President</td>
+        </tr>
+        <tr>
+            <td>Abdul Arif</td>
+            <td>Co-President</td>
+        </tr>
+        <tr>
+            <td>John Li</td>
+            <td>VP of Seniors</td>
+        </tr>
+        <tr>
+            <td>Ryan Yu</td>
+            <td>VP of Juniors</td>
+        </tr>
+        <tr>
+            <td>Vedant Purohit</td>
+            <td>Website Developer/Attendance</td>
+        </tr>
+        <tr>
+            <td>Stefan Geleriu</td>
+            <td>Data Analyst</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<!--PERMISSION-->
+
+<div id="b" class="full">
+<div align="left">
+<h1 class="head4" id="Permission">PERMISSION SLIP</h1>
+<div align="center">
+<h2 class="head2">Please print and complete the permission slip, and bring on the day of the contest</h2>
+</div>
+<div align="center">
+<object data="contestform.pdf" type="application/pdf" width="70%" height="650px">
+  <p><a href="contestform.pdf">Permission Slip</a></p>
+</object>
+</body>
 </body>
 </html>
